@@ -1,0 +1,516 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    color:#fff;
+    scroll-behavior: smooth;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('mybg.jpg');
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* padding:12px 9%; */
+   position: relative;
+   overflow: hidden;
+} 
+header .txts{
+position:absolute;
+top:50%;
+text-align: center;
+left:50%;
+transform:translate(-50%,-50%);
+}
+header .txt h1{
+    
+}
+.txts h3{
+    text-align: center;
+}
+.txts h3::before{
+    content: "_____";
+    /* position: absolute; */
+    margin-right:30px;
+    bottom:20%;
+    left:50%;
+    display: inline;
+    /* margin-bottom:20px; */
+}
+.about-me{
+    position: relative;
+    padding:20px 40px;
+}
+.about-me .row{
+    color:black;
+position: relative;
+display: flex;
+z-index: 12;
+align-items: center;
+justify-content: center;
+width:100%;
+padding:20px 10px;
+}
+.row p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #727272;
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+.txts h1{
+    width:100vw;
+    font-size: 70px;
+}
+.about-me{
+    overflow: hidden;
+}
+.about-me .backabout{
+    font-weight: 800;
+    color: #dadfe5;
+    font-size: 235px;
+    position: absolute;
+    overflow: hidden;
+    left:21%;
+    top: 0;
+    line-height:1;
+}
+.text-col{
+    flex-basis: 50%;
+    padding:10px 50px;
+}
+.img-col{
+    padding:10px 20px;
+    flex-basis: 50%;
+    display: inline-block; /* or use "block" if you want it to take up the full width */
+    overflow: hidden;
+    /* background: #000; */
+}
+.img-col img{
+    /* position: absolute; */
+    display: block;
+    width:80%;
+    max-width: 100%;
+    border-radius: 50%;
+    height: auto;
+   
+    margin:0 auto;
+}
+.text-col h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #001D38;
+    line-height: 3rem;
+}
+.text-col button{
+    background: #1a1a1b;
+    color: #fff;
+    display: inline-block;
+    padding: 14px 38px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 0;
+    border: 1px solid transparent;
+    text-align: center;
+    color: #fff ;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.text-col button:hover{
+    background: #fff;
+    color:#1a1a1b;
+    border: 1px solid #1a1a1b;
+}
+header img{
+  
+    position: absolute;
+    bottom:0;
+    transform: translate(-150px,60px);
+    /* mix-blend-mode: initial; */
+    width:750px;
+    border-radius:50%;
+    left:0;
+
+}
+#contact{
+    text-decoration: none;
+    background: hsl(113, 89%, 59%);
+    padding: 12px 26px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    color: #fff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+.myProjects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:50px 50px;
+}
+.myProjects .row{
+    width: 99%;
+display: flex;
+padding:50px 30px;
+align-items: center;
+justify-content: space-evenly;
+}
+.project{
+    position: relative;
+    padding: 0;
+   flex-basis: 30%;
+   /* margin:0px 2px; */
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: all .5s;
+  border-radius: 10px;
+}
+.project img{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    translate:all 0.5s;
+}
+
+
+.myProjects h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #001D38;
+    line-height: 3rem;
+}
+.project:nth-child(1)::before{
+   content: "Netflix Clone";
+   position: absolute;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   left:0;
+   height: 100%;
+   width: 0%;
+   border-radius: 10px;
+   z-index: 12;
+   font-display:none;
+   font-size: 0;         /* Make the font size 0 to effectively hide the text */
+  /* Make the text color transparent */
+   background-color: #050505;
+   opacity: .7;
+   font-weight: 900;
+   transition: all .5s;
+}
+.project:nth-child(1):hover:before{
+    font-size: 30px;
+    width: 100%;
+}
+.project:nth-child(2)::before{
+    content: "myQuiz";
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    z-index: 12;
+    font-display:none;
+    font-size: 0;         /* Make the font size 0 to effectively hide the text */
+   /* Make the text color transparent */
+    background-color: #050505;
+    opacity: .7;
+    font-weight: 900;
+    transition: all .5s;
+ }
+ .project:nth-child(2):hover:before{
+     font-size: 30px;
+     width: 100%;
+ }
+
+ .project:nth-child(3)::before{
+    content: "College Home Page";
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    z-index: 12;
+    font-display:none;
+    font-size: 0;         /* Make the font size 0 to effectively hide the text */
+   /* Make the text color transparent */
+    background-color: #050505;
+    opacity: .7;
+    font-weight: 900;
+    transition: all .5s;
+ }
+ .project:nth-child(3):hover:before{
+     font-size: 30px;
+     width: 100%;
+ }
+
+ .proje:nth-child(1)::before{
+    content: "TextUtils";
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    z-index: 12;
+    font-display:none;
+    font-size: 0;         /* Make the font size 0 to effectively hide the text */
+   /* Make the text color transparent */
+    background-color: #050505;
+    opacity: .7;
+    font-weight: 900;
+    transition: all .5s;
+ }
+ .proje:nth-child(1):hover:before{
+     font-size: 30px;
+     width: 100%;
+ }
+ .proje:nth-child(2)::before{
+    content: "todoList";
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    z-index: 12;
+    font-display:none;
+    font-size: 0;         /* Make the font size 0 to effectively hide the text */
+   /* Make the text color transparent */
+    background-color: #050505;
+    opacity: .7;
+    font-weight: 900;
+    transition: all .5s;
+ }
+ .proje:nth-child(2):hover:before{
+     font-size: 30px;
+     width: 100%;
+ }
+ .proje:nth-child(3)::before{
+    content: "Calculator";
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    z-index: 12;
+    font-display:none;
+    font-size: 0;         /* Make the font size 0 to effectively hide the text */
+   /* Make the text color transparent */
+    background-color: #050505;
+    opacity: .7;
+    font-weight: 900;
+    transition: all .5s;
+ }
+ .proje:nth-child(3):hover:before{
+     font-size: 30px;
+     width: 100%;
+ }
+.project:hover{
+    transform:scale(1.05);
+}
+
+.fix{
+    position: absolute;
+    top: 0;
+    position:fixed;
+    z-index: 100;
+    background: #09090a;
+   width: 100%;
+}
+
+.newheader{
+    padding:0;
+}
+.fix #contact{
+    transform: translate(-20px,0px);
+}
+.fix ul li a{
+    padding:.1px 0.1px;
+}
+
+
+.social_media_links a{
+    text-decoration: none;
+    color: #fff;
+}
+#top{
+    background-color: #0202022a;
+    width: 100%;
+}
+#top .row{
+    display: flex;
+    padding:12px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    margin:0 auto;
+    width: 80%;
+}
+#top .row .short_contact_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top .row .short_contact_list ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+#top .row .short_contact_list ul li{
+list-style: none;
+padding:10px 30px;
+}
+#top .row .short_contact_list ul li a{
+    text-decoration: none;
+    color:#5cfc3c;
+}
+#top .row .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myskills{
+    display: flex;
+    padding:60px 50px;
+    flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+  width: 100%;
+}
+
+.myskills .skill{
+    padding:20px 50px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.myskills .skill:hover{
+    transform: rotate(90deg);
+}
+.skills h1{
+    font-size: 50px;
+  text-align: center;
+    font-weight: 700;
+    color: #001D38;
+    line-height: 3rem;
+}
+
+footer{
+    overflow: hidden;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-menu{
+    float: right;
+  }
+  
+  .footer-menu ul{
+    display: flex;
+  }
+  
+  .footer-menu ul li{
+  padding-right: 10px;
+  display: block;
+  }
+  
+  .footer-menu ul li a{
+    color: #cfd2d6;
+    text-decoration: none;
+  }
+  
+  .footer-menu ul li a:hover{
+    color: #27bcda;
+  }
+
+
+  @media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    }
