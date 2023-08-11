@@ -2,6 +2,7 @@
     padding: 0;
     margin:0;
     box-sizing: border-box;
+    overflow-x:hidden;
 }
 body{
     overflow-x: hidden;
@@ -54,7 +55,7 @@ width:100%;
 padding:20px 10px;
 }
 .row p{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
     color: #727272;
     margin-top: 20px;
@@ -128,7 +129,6 @@ header img{
     position: absolute;
     bottom:0;
     transform: translate(-150px,60px);
-    /* mix-blend-mode: initial; */
     width:750px;
     border-radius:50%;
     left:0;
@@ -220,8 +220,7 @@ justify-content: space-evenly;
     border-radius: 10px;
     z-index: 12;
     font-display:none;
-    font-size: 0;         /* Make the font size 0 to effectively hide the text */
-   /* Make the text color transparent */
+    font-size: 0;     
     background-color: #050505;
     opacity: .7;
     font-weight: 900;
@@ -244,8 +243,7 @@ justify-content: space-evenly;
     border-radius: 10px;
     z-index: 12;
     font-display:none;
-    font-size: 0;         /* Make the font size 0 to effectively hide the text */
-   /* Make the text color transparent */
+    font-size: 0;        
     background-color: #050505;
     opacity: .7;
     font-weight: 900;
@@ -354,6 +352,7 @@ justify-content: space-evenly;
     color: #fff;
 }
 #top{
+    overflow-x: hidden;
     background-color: #0202022a;
     width: 100%;
 }
@@ -505,7 +504,18 @@ footer{
   .footer-menu ul li a:hover{
     color: #27bcda;
   }
+  .short_contact_list li a{
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+  }
+  .short_contact_list li a i{
+    padding:0px 7px;
+  }
 
+#navbarNav ul li{
+    padding:20px 20px;
+}
 
   @media (max-width:500px) {
     .footer-menu ul{
@@ -514,3 +524,63 @@ footer{
       margin-bottom: 20px;
     }
     }
+    
+    @media only screen and (max-width: 992px) {
+        nav{
+            width:100%;
+        }
+
+        #navbarNav ul li{
+            padding:5px 2px;
+        }
+#contact{
+    margin-top:20px;
+}
+.text-col{
+    padding:2px 10px;
+}
+.img-col{
+    padding:2px 10px;
+}
+.img-col img{
+    width: 120%;
+}     
+.myProjects{
+    padding:5px 0px;
+}
+.myProjects .row{
+    padding:20px 0px;
+}
+.myskills{
+    padding:0px;
+}
+      }
+      @media only screen and (max-width: 600px){
+        .myProjects .row{
+            flex-direction: column;
+        }
+     .myProjects .project{
+       width:90%;
+       margin-top:20px;
+     }
+   .about-me .row{
+flex-direction: column-reverse;
+   }
+   .text-col{
+    width:100%;
+    text-align: center;
+   }
+   .img-col{
+    width:100%;
+   }
+  #toptxt h1{
+    font-size: 40px;
+   }
+   .img-col img{
+    height:30px;
+   }
+      }
+
+
+
+      
