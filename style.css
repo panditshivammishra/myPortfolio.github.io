@@ -582,5 +582,10 @@ flex-direction: column-reverse;
       }
 
 
-
+h1{
+    overflow-y: hidden;
+}
+h3{
+    overflow-y: hidden;
+}
       
